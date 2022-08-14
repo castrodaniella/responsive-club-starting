@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Fira+Sans:wght@100;300;400&display=swap');
+
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #a02a15;
+}
+
+h2,
+h3,
+p {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+}
+
+/*Navigation*/
+img.logo{
+    width: 10rem;
+    height: 5rem;
+}
+
+.nav {
+    background-color: #e0b234;
+    color: #fff;
+    font-weight: 600;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+    top: 0;   
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menu  > li {
+    display: inline;
+    padding: 0.4rem;    
+}
+
+.menu-icon img {
+    width: 2.5rem;   
+}
+
+.menu li:last-child {
+    display: none;
+}
+
+
+.item a {
+    text-decoration: none;
+    color: #a02a15;
+}
+
+
+
+@media only screen and (max-width:800px) {
+
+    /*nav*/
+    .menu  > li {
+        display: none;
+    }
+
+    .menu  li:first-child,
+    .menu  li:last-child {
+        display: inline;
+    }
+
+    li:last-child {
+        margin-left:  auto;
+        padding-right: 2rem;
+    }
+
+    /*main*/
+    .recipes-container {
+    flex-wrap: wrap;
+    }
+
+    .banner img {
+        width: 16rem;
+    }
+
+    .banner {
+        display: flex;
+    }
+
+    img.v {
+        width: 14rem;
+        height: 18rem;
+    }
+    
+    img.h {
+        width: 18rem;
+        height: 14rem;  
+    }
+       
+}
+
+/*Banner*/
+.banner {
+    display: flex;
+    background: url("./img/tangerine-newt-RgT22Ixcq4Y-unsplash.jpg");
+    background-size: cover;
+    height: 80rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about{
+    margin: 4rem;
+    color: #46540f;
+    background-color: #e7dea8;
+    opacity: 80%;
+    text-align: center;
+    font-size: 2rem;
+   
+    
+}
+
+
+.banner img {
+    width: 40rem;
+}
+
+
+
+/*recipes*/
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.recipes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ 
+}
+
+
+
+.recipe {
+    display: inline;
+    box-shadow: rgba(100, 100, 111, 0.2) 0rem 0.5rem 2rem 0rem;  
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+
+img.v {
+    max-width: 30rem;
+    max-height: 40rem;
+}
+
+img.h {
+    max-width: 40em;
+    max-height: 30rem;  
+}
+
+
+/*form*/
+.form {
+    display: flex;
+    background-color: #e0b234;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+}
+
+.join-us {
+    background-color: #e7dea8;
+    width: 18.75rem;
+    border-radius: 0.3125;
+    font-weight: 37.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+/*foot*/
+
+.foot {
+    display: flex;
+    background-color: #a02a15;
+    padding: 1.25rem;
+    
+}
+
+.foot h1 {
+    color: #e0b234;
+}
+
